@@ -1,0 +1,29 @@
+{
+	"name": "b13/b13-widgets",
+	"description": "Provides widgets to display latest articles from b13",
+	"type": "typo3-cms-extension",
+	"homepage": "https://b13.com",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [
+		{
+			"name": "Oliver Bartsch",
+			"email": "oliver.bartsch@b13.com"
+		}
+	],
+	"require": {
+		"php": ">=7.2.0",
+		"typo3/cms-core": "^10.4 || ^11.0",
+		"typo3/cms-dashboard": "^10.4 || ^11.0"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-master"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "b13_widgets"
+		}
+	},
+	"replace": {
+		"b13_widgets": "self.version"
+	}
+}

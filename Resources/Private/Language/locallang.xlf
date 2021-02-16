@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" product-name="b13_widgets">
+		<header/>
+		<body>
+			<trans-unit id="widgets.b13.title">
+				<source>About b13</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13.description">
+				<source>Display information about b13</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13.text">
+				<source>
+					Experience. Expertise. Curiosity. This is how b13, located in Stuttgart, Germany, delivers
+					exceptional digital experiences to our clients and their customers. We partner with our clients.
+					We listen, learn, and work together to truly understand their challenges. We turn those challenges
+					into sustainable success.
+				</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13.buttonTitle">
+				<source>Let’s connect</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13blog.title">
+				<source>b13 blog</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13blog.description">
+				<source>Display latest articles from the b13 blog</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13blog.buttonTitle">
+				<source>More articles</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13coreinsights.title">
+				<source>b13 core insights</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13coreinsights.description">
+				<source>Display latest core insights from b13</source>
+			</trans-unit>
+			<trans-unit id="widgets.b13coreinsights.buttonTitle">
+				<source>More core insights</source>
+			</trans-unit>
+			<trans-unit id="b13WidgetGroup.title">
+				<source>b13 widgets</source>
+			</trans-unit>
+			<trans-unit id="b13Preset.title">
+				<source>b13 dashboard</source>
+			</trans-unit>
+			<trans-unit id="b13Preset.description">
+				<source>Your dashboard will be created with all b13 widgets on it.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

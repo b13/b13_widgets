@@ -1,0 +1,79 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  dashboard.buttons.b13:
+    class: 'TYPO3\CMS\Dashboard\Widgets\Provider\ButtonProvider'
+    arguments:
+      $title: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13.buttonTitle'
+      $link: 'https://b13.com'
+      $target: '_blank'
+
+  dashboard.widget.b13:
+    class: 'TYPO3\CMS\Dashboard\Widgets\CtaWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $buttonProvider: '@dashboard.buttons.b13'
+      $options:
+        text: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13.text'
+    tags:
+      - name: dashboard.widget
+        identifier: 'b13'
+        groupNames: 'b13WidgetGroup'
+        title: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13.title'
+        description: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13.description'
+        iconIdentifier: 'tx-b13-widgets'
+        height: 'small'
+        width: 'medium'
+
+  dashboard.buttons.b13blog:
+    class: 'TYPO3\CMS\Dashboard\Widgets\Provider\ButtonProvider'
+    arguments:
+      $title: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13blog.buttonTitle'
+      $link: 'https://b13.com/blog'
+      $target: '_blank'
+
+  dashboard.widget.b13blog:
+    class: 'TYPO3\CMS\Dashboard\Widgets\RssWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $cache: '@cache.dashboard.rss'
+      $buttonProvider: '@dashboard.buttons.b13blog'
+      $options:
+        feedUrl: 'https://b13.com/blog/rss.xml'
+    tags:
+      - name: dashboard.widget
+        identifier: 'b13blog'
+        groupNames: 'b13WidgetGroup'
+        title: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13blog.title'
+        description: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13blog.description'
+        iconIdentifier: 'tx-b13-widgets'
+        height: 'large'
+        width: 'medium'
+
+  dashboard.buttons.b13coreinsights:
+    class: 'TYPO3\CMS\Dashboard\Widgets\Provider\ButtonProvider'
+    arguments:
+      $title: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13coreinsights.buttonTitle'
+      $link: 'https://b13.com/core-insights'
+      $target: '_blank'
+
+  dashboard.widget.b13coreinsights:
+    class: 'TYPO3\CMS\Dashboard\Widgets\RssWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $cache: '@cache.dashboard.rss'
+      $buttonProvider: '@dashboard.buttons.b13coreinsights'
+      $options:
+        feedUrl: 'https://b13.com/core-insights/rss.xml'
+    tags:
+      - name: dashboard.widget
+        identifier: 'b13coreinsights'
+        groupNames: 'b13WidgetGroup'
+        title: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13coreinsights.title'
+        description: 'LLL:EXT:b13_widgets/Resources/Private/Language/locallang.xlf:widgets.b13coreinsights.description'
+        iconIdentifier: 'tx-b13-widgets'
+        height: 'medium'
+        width: 'medium'
